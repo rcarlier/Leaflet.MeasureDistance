@@ -1,0 +1,20 @@
+{
+    "name": "rc-charts",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "directories": {
+        "example": "examples"
+    },
+    "scripts": {
+        "build:js": "uglifyjs src/leaflet.measureDistance.js -c -m reserved=['L','MeasureDistance','measureDistance'] -o dist/leaflet.measureDistance.min.js",
+        "build": "npm run build:js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "uglify-js": "^3.17.4",
+        "uglifycss": "^0.0.29"
+    }
+}
