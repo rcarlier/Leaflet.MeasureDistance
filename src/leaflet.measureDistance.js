@@ -88,7 +88,7 @@ L.Control.MeasureDistance = L.Control.extend({
             this._circle = L.circle(p1, { radius: dist_km * 1000 }).addTo(this._map);
             this._map.fitBounds(this._circle.getBounds());
         } else {
-            let bounds = L.latLngBounds(this._m1.getLatLng(), this._m2.getLatLng());
+            let bounds = L.latLngBounds(p1, p2);
             this._map.fitBounds(bounds);
         }
     },
